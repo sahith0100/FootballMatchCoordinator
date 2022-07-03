@@ -6,6 +6,7 @@ import com.loginregister.loginregisterspring.model.User;
 @Repository
 
 public interface UserRepository extends JpaRepository<User,Long> {
+    User findByEmail(String email);
 
 
 }
